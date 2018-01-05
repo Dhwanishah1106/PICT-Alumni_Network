@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--=============================================== 
-    Template Design By WpFreeware Team.
-    Author URI : http://www.wpfreeware.com/
-    ====================================================-->
+
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <title>Careers:PICT Alumni Network</title>
+     <title>Newsletter:PICT Alumni Network</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -51,6 +48,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+  
   </head>
   <body>
 
@@ -73,7 +72,7 @@
               </button>
               <!-- LOGO -->
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="index.html">PICT <span>Alumni Network</span></a>              
+              <a class="navbar-brand">PICT <span>Alumni Network</span></a>              
               <!-- IMG BASED LOGO  -->
                <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->            
                      
@@ -82,19 +81,31 @@
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="events-archive.html">Events</a></li>
-                <li><a href="scholarship.html">Directory</a></li>
-                <li><a href="events-archive.html">Newsletter</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Directory<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="directory.html">By name</a></li>
+                    <li><a href="directory-place.html">By place</a></li>
+                  </ul>
+                </li>               
+                <li class="active"><a href="newsletter.html">Newsletter</a></li>
                 <li><a href="gallery.html">Gallery</a></li>                
-                <li class="active"><a href="course-archive.html">Careers</a></li>
+                <li><a href="careers.html">Careers</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Give Back<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="404.html">Projects</a></li>
-                    <li><a href="#">Give in cash</a></li>
-                    <li><a href="#">Give in kind</a></li>               
+                    <li><a href="404.html">Give in cash</a></li>
+                    <li><a href="404.html">Give in kind</a></li>               
                   </ul>
                 </li>               
-                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="404.html">Discussion Forum</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                  </ul>
+                </li>               
               </ul>           
             </div><!--/.nav-collapse -->
           </div>     
@@ -104,33 +115,12 @@
     </header>
     <!--=========== END HEADER SECTION ================--> 
 
+
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
-    <section id="imgBanner" style="filter:grayscale(100%);">
-      <h2>Careers-Job and Internships</h2>
+    <section id="imgBanner" style="filter:grayscale(100%)">
+      <h2>Newsletter</h2>
     </section>
     <!--=========== END COURSE BANNER SECTION ================-->
-
-    <section id="aboutUs">
-      <div class="container">
-        <div class="row">
-        <!-- Start about us area -->
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="aboutus_area wow fadeInLeft">
-            <h2 class="titile">Career Opportunities-From PICTians, for PICTians!</h2>
-            <p style="font-size:140%;">Pune Institute of Computer Technology, abbreviated as PICT has been the
-            producing engineers who have helped lead the ever developing field of technology. PICTians have
-            made their presence felt in all fields- be it industry, research or entrepreneurship as well. PICT
-             Alumni Network is a platform to connect all these brilliant people who were once students of this 
-            college. To relive those memories, to contribute to the institute, to  share their experiences, to
-            get to know about happenings in the alumni community and a platform to interact with the current
-            students of the college-in short this is the platform to make you feel a part of the PICT Family!</p>
-            <a href="#" style="padding-top:15px; font-size:130%; color: blue;">Host your employee or intern requirement with us</a>
-          </div>
-        </div>
-        </div>
-       </div>
-     </section>
-
     
     <!--=========== BEGIN COURSE BANNER SECTION ================-->
     <section id="courseArchive">
@@ -139,139 +129,78 @@
           <!-- start course content -->
           <div class="col-lg-8 col-md-8 col-sm-8">
             <div class="courseArchive_content">
+              <!-- start blog archive  -->
               <div class="row">
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="course-single.html" class="course_more">Know more</a>
-                      </div>
+                <!-- start single blog archive -->
+                <div class="col-lg-12 col-12 col-sm-12">
+                  <div class="single_blog_archive wow fadeInUp">
+                    <div class="blogimg_container">
+                      <a href="#" class="blog_img">
+                        <img alt="img" src="img/blog.jpg">
+                      </a>
                     </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">Job Heading</a></h3>
-                    <p class="singCourse_price"><span>Salary</span> Per One Month</p>
-                    <p>This will be 2-3 lines of description about the particular job opportunity</p>
+                    <h2 class="blog_title"><a href="blog-single.html">Heading of the Newsletter</a></h2>
+                    <div class="blog_commentbox">
+                      <p><i class="fa fa-user"></i>Author</p>
+                      <p><i class="fa fa-calendar"></i>Date</p>
+                      <a href="#"><i class="fa fa-comments"></i>Comments</a>
                     </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Alumni Name</p>
-                    </div>
+                    <p class="blog_summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam</p>
+                    <a class="blog_readmore" href="blog-single.html">Read More</a>
                   </div>
                 </div>
-                <!-- End single course -->
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="course-single.html" class="course_more">Know more</a>
-                      </div>
+                <!-- start single blog archive -->
+                <!-- start single blog archive -->
+                <div class="col-lg-12 col-12 col-sm-12">
+                  <div class="single_blog_archive wow fadeInUp">
+                    <div class="blogimg_container">
+                      <a href="#" class="blog_img">
+                        <img alt="img" src="img/blog.jpg">
+                      </a>
                     </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">Job Heading</a></h3>
-                    <p class="singCourse_price"><span>Salary</span> Per One Month</p>
-                    <p>This will be 2-3 lines of description about the particular job opportunity</p>
+                    <h2 class="blog_title"><a href="blog-single.html">Heading of the Newsletter</a></h2>
+                    <div class="blog_commentbox">
+                      <p><i class="fa fa-user"></i>Author</p>
+                      <p><i class="fa fa-calendar"></i>Date</p>
+                      <a href="#"><i class="fa fa-comments"></i>Comments</a>
                     </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Alumni Name</p>
-                    </div>
+                    <p class="blog_summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam...</p>
+                    <a class="blog_readmore" href="blog-single.html">Read More</a>
                   </div>
                 </div>
-                <!-- End single course -->
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="course-single.html" class="course_more">Know more</a>
-                      </div>
+                <!-- start single blog archive -->
+                <!-- start single blog archive -->
+                <div class="col-lg-12 col-12 col-sm-12">
+                  <div class="single_blog_archive wow fadeInUp">
+                    <div class="blogimg_container">
+                      <a href="#" class="blog_img">
+                        <img alt="img" src="img/blog.jpg">
+                      </a>
                     </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">Job Heading</a></h3>
-                    <p class="singCourse_price"><span>Salary</span> Per One Month</p>
-                    <p>This will be 2-3 lines of description about the particular job opportunity</p>
+                    <h2 class="blog_title"><a href="blog-single.html"> Heading of the Newsletter</a></h2>
+                    <div class="blog_commentbox">
+                      <p><i class="fa fa-user"></i>Author</p>
+                      <p><i class="fa fa-calendar"></i>Date</p>
+                      <a href="#"><i class="fa fa-comments"></i>Comments</a>
                     </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Alumni Name</p>
-                    </div>
+                    <p class="blog_summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam...</p>
+                    <a class="blog_readmore" href="blog-single.html">Read More</a>
                   </div>
                 </div>
-                <!-- End single course -->
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="course-single.html" class="course_more">Know more</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">Job Heading</a></h3>
-                    <p class="singCourse_price"><span>Salary</span> Per One Month</p>
-                    <p>This will be 2-3 lines of description about the particular job opportunity</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Alumni Name</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End single course -->
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="course-single.html" class="course_more">Know more</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">Job Heading</a></h3>
-                    <p class="singCourse_price"><span>Salary</span> Per One Month</p>
-                    <p>This will be 2-3 lines of description about the particular job opportunity</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Alumni Name</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End single course -->
-                <!-- start single course -->
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="single_course wow fadeInUp">
-                    <div class="singCourse_imgarea">
-                      <img src="img/course-1.jpg" />
-                      <div class="mask">                         
-                        <a href="course-single.html" class="course_more">Know more</a>
-                      </div>
-                    </div>
-                    <div class="singCourse_content">
-                    <h3 class="singCourse_title"><a href="course-single.html">Job Heading</a></h3>
-                    <p class="singCourse_price"><span>Salary</span> Per One Month</p>
-                    <p>This will be 2-3 lines of description about the particular job opportunity</p>
-                    </div>
-                    <div class="singCourse_author">
-                      <img src="img/author.jpg" alt="img">
-                      <p>Alumni Name</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End single course -->
+                <!-- start single blog archive -->
               </div>
-              <!-- start previous & next button -->
-              <div class="single_blog_prevnext">
-                <a href="#" class="prev_post wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"><i class="fa fa-angle-left"></i>Previous</a>
-                <a href="#" class="next_post wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">Next<i class="fa fa-angle-right"></i></a>
-              </div>
+              <!-- end blog archive  -->
+              <nav>
+                <ul class="pagination wow fadeInLeft">
+                  <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                </ul>
+              </nav>
             </div>
           </div>
           <!-- End course content -->
@@ -281,7 +210,7 @@
             <div class="courseArchive_sidebar">
               <!-- start single sidebar -->
               <div class="single_sidebar">
-                <h2>Memorable Events <span class="fa fa-angle-double-right"></span></h2>
+                <h2>Popular post <span class="fa fa-angle-double-right"></span></h2>
                 <ul class="news_tab">
                   <li>
                     <div class="media">
@@ -291,8 +220,8 @@
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">Link to the elaborated event page</a>
-                       <span class="feed_date">xx.yy.zzzz</span>
+                       <a href="#">Brief headlines for the posts</a>
+                       <span class="feed_date">Date</span>
                       </div>
                     </div>
                   </li>
@@ -304,8 +233,9 @@
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">Link to the elaborated event page</a>
-                       <span class="feed_date">xx.yy.zzzz</span>
+                       <a href="#">Brief headlines for the posts</a>
+                       <span class="feed_date"></span>                
+                       <span class="feed_date">Date</span>                
                       </div>
                     </div>
                   </li>
@@ -317,18 +247,42 @@
                         </a>
                       </div>
                       <div class="media-body">
-                       <a href="#">Link to the elaborated event page</a>
-                       <span class="feed_date">xx.yy.zzzz</span>
+                       <a href="#">Brief headlines for the posts</a>
+                       <span class="feed_date">Date</span>                
                       </div>
                     </div>
                   </li>                  
                 </ul>
               </div>
               <!-- End single sidebar -->
-
+              <!-- start single sidebar 
+              <div class="single_sidebar">
+                <h2>Category <span class="fa fa-angle-double-right"></span></h2>
+                <ul>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Technology</a></li>
+                  <li><a href="#">Fashion</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Games</a></li>
+                </ul>
+              </div>
+              <!-- End single sidebar -->
+              <!-- start single sidebar
+              <div class="single_sidebar">
+                <h2>Tags <span class="fa fa-angle-double-right"></span></h2>
+                <ul class="tags_nav">
+                  <li><a href="#"><i class="fa fa-tags"></i>Creative</a></li>
+                  <li><a href="#"><i class="fa fa-tags"></i>News</a></li>
+                  <li><a href="#"><i class="fa fa-tags"></i>Technology</a></li>
+                  <li><a href="#"><i class="fa fa-tags"></i>Art</a></li>
+                  <li><a href="#"><i class="fa fa-tags"></i>Audio</a></li>
+                  <li><a href="#"><i class="fa fa-tags"></i>video</a></li>
+                </ul>
+              </div>
+              <!-- End single sidebar -->
               <!-- start single sidebar -->
               <div class="single_sidebar">
-                <h2>Alumni Ads<span class="fa fa-angle-double-right"></span></h2>
+                <h2>Alumni Ads <span class="fa fa-angle-double-right"></span></h2>
                 <a class="side_add" href="#"><img src="img/side-add.jpg" alt="img"></a>
               </div>
               <!-- End single sidebar -->
@@ -340,7 +294,7 @@
     </section>
     <!--=========== END COURSE BANNER SECTION ================-->
     
-    <!--=========== BEGIN FOOTER SECTION ================-->
+<!--=========== BEGIN FOOTER SECTION ================-->
     <footer id="footer">
       <!-- Start footer top area -->
       <div class="footer_top">
@@ -403,7 +357,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="footer_bootomRight">
-                <p>Designed by <a href="http://wpfreeware.com/" rel="nofollow">Pratik Ratadiya &amp; Dhwani Shah</a></p>
+                <p>Designed by <a href="https://www.linkedin.com/in/pratik-ratadiya-88622914a/" rel="nofollow">Pratik Ratadiya</a> &amp;<a href="https://www.linkedin.com/in/dhwani-shah-40222a14a/" rel="nofollow"> Dhwani Shah</a></p>
               </div>
             </div>
           </div>
@@ -412,6 +366,7 @@
       <!-- End footer bottom area -->
     </footer>
     <!--=========== END FOOTER SECTION ================--> 
+
 
   
 
@@ -439,10 +394,8 @@
    
     <!-- Custom js-->
     <script src="js/custom.js"></script>
-  <!--=============================================== 
-    Template Design By WpFreeware Team.
-    Author URI : http://www.wpfreeware.com/
-  ====================================================-->
+    
+
 
   </body>
 </html>
